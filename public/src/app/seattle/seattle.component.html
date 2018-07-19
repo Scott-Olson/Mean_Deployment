@@ -1,0 +1,7 @@
+<p>
+  seattle works!
+</p>
+<img class="cityImage" src="https://images.pexels.com/photos/419235/pexels-photo-419235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250&w=250">
+<h3 *ngIf="weather" >Location: {{ weather['name']}}, {{ weather['sys']['country']}}</h3>
+<h3 *ngIf="weather">Current temp: {{ weather['main']['temp'] }} deg Kelvin (you do the math)</h3>
+<h3 *ngIf="weather">Max temp: {{ weather['main']['temp_max'] }} deg Kelvin (you do the math)</h3>

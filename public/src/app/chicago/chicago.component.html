@@ -1,0 +1,7 @@
+<p>
+  chicago works!
+</p>
+<img class="cityImage" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1444259815000/photosp/6a270cf4-d773-4564-80c4-d12b99b60c41/6a270cf4-d773-4564-80c4-d12b99b60c41.jpg">
+<h3 *ngIf="weather" >Location: {{ weather['name']}}, {{ weather['sys']['country']}}</h3>
+<h3 *ngIf="weather">Current temp: {{ weather['main']['temp'] }} deg Kelvin (you do the math)</h3>
+<h3 *ngIf="weather">Max temp: {{ weather['main']['temp_max'] }} deg Kelvin (you do the math)</h3>

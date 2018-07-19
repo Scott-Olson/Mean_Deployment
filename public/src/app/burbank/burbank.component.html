@@ -1,0 +1,8 @@
+<p>
+  burbank works!
+</p>
+<img class="cityImage" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1508470418000/photosp/bd509604-ac4a-4441-b215-64e553bcdff1/stock-photo-photography-travel-shopping-california-lifestyle-los-angeles-amazing-dining-burbank-bd509604-ac4a-4441-b215-64e553bcdff1.jpg">
+
+<h3 *ngIf="weather" >Location: {{ weather['name']}}, {{ weather['sys']['country']}}</h3>
+<h3 *ngIf="weather">Current temp: {{ weather['main']['temp'] }} deg Kelvin (you do the math)</h3>
+<h3 *ngIf="weather">Max temp: {{ weather['main']['temp_max'] }} deg Kelvin (you do the math)</h3>

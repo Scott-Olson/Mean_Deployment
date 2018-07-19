@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>weather in your area: </h2>
+<button class="btn btn-warning" [routerLink]="['/seattle']">Seattle, WA</button>
+<button class="btn btn-warning" [routerLink]="['/sanjose']">San Jose, CA</button>
+<button class="btn btn-warning" [routerLink]="['/burbank']" >Burbank, CA</button>
+<button class="btn btn-warning" [routerLink]="['/dallas']">Dallas, TX</button>
+<button class="btn btn-warning" [routerLink]="['/dc']">Washington, DC</button>
+<button class="btn btn-warning" [routerLink]="['/chicago']">Chicago, IL </button>
+<hr>
+<router-outlet></router-outlet>

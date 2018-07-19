@@ -1,0 +1,7 @@
+<p>
+  dallas works!
+</p>
+<img class="cityImage" src="https://images.pexels.com/photos/45182/dallas-texas-skyline-dusk-45182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+<h3 *ngIf="weather" >Location: {{ weather['name']}}, {{ weather['sys']['country']}}</h3>
+<h3 *ngIf="weather">Current temp: {{ weather['main']['temp'] }} deg Kelvin (you do the math)</h3>
+<h3 *ngIf="weather">Max temp: {{ weather['main']['temp_max'] }} deg Kelvin (you do the math)</h3>
